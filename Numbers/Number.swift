@@ -10,9 +10,11 @@ import Foundation
 
 
 //This will hold a Pure Mathematical Number in compliance with Number Theory
-// i.e. - Natural Number, Whole Number, Integer, Rational Fraction, Irrational, Decimals, <- Real
-// also Imaginary Numbers and Complex Numbers
-//
+//REAL NUMBERS
+// i.e. - Natural Number, Whole Number, Integer
+// Rational Fraction with Decimal Expansion - Terminating and Repeating
+// Irrational (algebraic & transcendental) with non-terminating, non-repeating Decimals Expansion Approximations
+// and also IMAGINARY and COMPLEX NUMBERS
 
 //First define data structure to hold real numbers
 enum Real {
@@ -20,7 +22,8 @@ enum Real {
     case whole(Int)
     case integer(Int)
     case rational(Int, Int)
-    case Irrational(String, Double)
+    case irrationalAlgebraic(String, String, Double)
+    case irrationalTranscendental(String, Double)
     case decimal(Double)
 }
 
